@@ -18,10 +18,10 @@ def names_2():
         if division == 'Students':
             for entry in users['Students']:
                 students = students +1
-                print students, "-", entry['first_name'],entry['last_name'],len(entry['first_name']+entry['last_name'])
+                print students, "-", entry['first_name'].upper(),entry['last_name'].upper(),len(entry['first_name']+entry['last_name'])
         if division == 'Instructors':
             for entry in users['Instructors']:
                 instructors = instructors +1
-                print instructors, "-", entry['first_name'],entry['last_name'],len(entry['first_name']+entry['last_name'])    
+                print instructors, "-", entry['first_name'].upper(),entry['last_name'].upper(),len(entry['first_name']+entry['last_name'])    
             
 names_2()
